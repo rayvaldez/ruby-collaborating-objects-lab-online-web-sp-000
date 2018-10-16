@@ -19,7 +19,7 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name(artist)
     unless @@all == []
       @@all.each do |element|
         if element.name == artist
