@@ -20,11 +20,16 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.find(name)
-      self.find(name)
-    else
-      self.create(name)
+    unless @@all == []
+      @@all.each do |element|
+        if element.name == artist
+          return element
+        end
+      end
     end
+    new_artist = Artist.new(artist)
+    new_artist.save
+    new_artist
   end
 
 end
