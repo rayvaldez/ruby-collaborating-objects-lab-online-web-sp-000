@@ -32,11 +32,10 @@ class Artist
     new_artist
 
     def print_songs
-      @songs.each do |song|
-        puts song.name
+      binding.pry
       end
     end
-    
+
   end
 
 end
