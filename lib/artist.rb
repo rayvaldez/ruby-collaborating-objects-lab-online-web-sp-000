@@ -30,6 +30,13 @@ class Artist
     new_artist = Artist.new(artist)
     new_artist.save
     new_artist
+
+    def print_songs
+      @songs.each do |song|
+        puts song.name
+      end
+    end
+    
   end
 
 end
