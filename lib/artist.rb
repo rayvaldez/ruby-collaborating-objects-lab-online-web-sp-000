@@ -30,10 +30,8 @@ class Artist
     new_artist = Artist.new(artist)
     new_artist.save
     new_artist
+  end
 
-    def print_songs
-    
-    end
 
   end
 
